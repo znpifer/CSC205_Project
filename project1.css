@@ -1,4 +1,4 @@
-/* Header styles */
+/* Header style */
 header {
   background-color: #623838;
   font-family: 'Courier New', Courier, monospace;
@@ -6,13 +6,13 @@ header {
   color: #000000;
   text-align: center;
   padding: 8px 0;
-   
 }
+/* logo img */
 .logo{
   max-width: 150px;
   display: inline-block;
 }
-/* General styles */
+/* General style */
 body {
   font-family: 'Trirong Font', sans-serif;
   background-color: rgb(199, 157, 105	);
@@ -39,8 +39,7 @@ h3{
   font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    color:#000000; 
-    
+    color:#000000;    
 }
 
 h4 {
@@ -48,7 +47,6 @@ h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     color:#000000; 
-    
 }
 
 h5 {
@@ -81,6 +79,7 @@ nav a:hover {
   background-color:  #808000;
   color: #D3D3D3;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -111,7 +110,6 @@ nav li {
   padding: 20px;
   background-color: #623838;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .shop-card {
@@ -119,13 +117,15 @@ nav li {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  background-color:#D3D3D3
+  background-color:#D3D3D3;
 }
 
+/* shop text color */
 .shop-card h3 {
   color: #333;
 }
 
+/* location text color */
 .shop-card p {
   color: #666;
 }
@@ -135,7 +135,7 @@ img{
   border-radius: 25px;
 }
 
-/* keep elements in box */
+/* keep elements in box shape*/
  *{
   box-sizing: border-box;
 }
@@ -147,22 +147,21 @@ img{
 }
 
 .row::after {
-  content: "";
   clear: both;
   display: table;
 }
 
-/* Define the table styles */
+/* table style */
 table {
   border-collapse: collapse;
   width: 50%;
   margin: 0 auto;
 }
-/* Specify table border */
+/* table border */
 table, th, td {
   border: 1px solid #623838;
 }
-/* Specify header styles */
+/* header table style */
 th {
   background-color:  #623838;
   color: white; 
@@ -171,28 +170,53 @@ th {
   padding: 10px; 
   text-align: center;
 }
- /* Specify cell styles */
+ /* cell style */
  td {
   font-family: Arial, sans-serif; 
   font-size: 14px; 
   padding: 10px; 
   text-align: center;
 }
-/* Specify background color for even rows */
+
+/* background color for even rows */
 tr:nth-child(even) {
-  background-color: #a09393; /* Background color for even rows */
-}
-/* Specify text color for even and odd cells */
-tr:nth-child(even) td {
-  color: #000000; /* Text color for even cells */
+  background-color: #a09393; 
 }
 
-tr:nth-child(odd) td {
-  color: #000000; /* Text color for odd cells */
+/* text color for even cells */
+tr:nth-child(even) td {
+  color: #000000; 
 }
-/* Specify background color for odd rows */
+
+/* Text color for odd cells */
+tr:nth-child(odd) td {
+  color: #000000; 
+}
+
+/* background color for odd rows */
 tr:nth-child(odd) {
-  background-color: #6e6464; /* Background color for odd rows */
+  background-color: #6e6464; 
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.review {
+  background-color: #D3D3D3;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.user {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 hr {
   height: 2px;
