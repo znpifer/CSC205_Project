@@ -6,6 +6,12 @@ header {
   color: #000000;
   text-align: center;
   padding: 15px 0;
+   
+}
+.logo{
+  max-width: 100px;
+  display: block;
+  float: left;
 }
 /* General styles */
 body {
@@ -29,20 +35,46 @@ h2 {
   color: #000000;
 }
 
+h3{
+  font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:#000000; 
+    
+}
+
+h4 {
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:#000000; 
+    
+}
+
+h5 {
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color:#000000; 
+}
+
 /* Paragraphs */
 p {
   margin: 0.5rem 0;
+  text-align: center;
 }
 
 /* Navbar */
 nav {
   background-color: #808000;
   color: #090606;
+  padding: 0.5px;
 }
 
 nav a {
   color: #090606;
-  text-decoration: none;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav a:hover {
@@ -73,37 +105,6 @@ nav li {
   width: 40%;
 }
 
-/* Footer */
-footer {
-  padding: 14px 20px;
-  background-color: #D3D3D3;
-  color: #000000;
-  text-align: center;
-}
-/*body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Set a background color and font family */
-/*body {
-  font-family: Arial, sans-serif;
-  background-color: rgb(199, 157, 105	);
-}
-
-
-
-/* Navigation menu styles */
-/*nav {
-  background-color: 	#808000;
-}*/
-
-
-/*nav a {
-  color: #090606;
-  text-decoration: none;
-}
 
 /* Container for reviews */
 .shop-container {
@@ -132,7 +133,7 @@ footer {
   color: #666;
 }
 
-/* pictures */
+/* images */
  *{
   box-sizing: border-box;
 }
@@ -149,37 +150,57 @@ footer {
   display: table;
 }
 
-/* Button styles */
-/*.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+/* Define the table styles */
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+/* Specify table border */
+table, th, td {
+  border: 1px solid #623838;
+}
+/* Specify header styles */
+th {
+  background-color:  #623838;
+  color: white; 
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+  padding: 10px; 
+}
+ /* Specify cell styles */
+ td {
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  padding: 10px; 
+}
+/* Specify background color for even rows */
+tr:nth-child(even) {
+  background-color: #a09393; /* Background color for even rows */
+}
+/* Specify text color for even and odd cells */
+tr:nth-child(even) td {
+  color: #000000; /* Text color for even cells */
 }
 
-.button:hover {
-  background-color: #555;
+tr:nth-child(odd) td {
+  color: #000000; /* Text color for odd cells */
+}
+/* Specify background color for odd rows */
+tr:nth-child(odd) {
+  background-color: #6e6464; /* Background color for odd rows */
+}
+hr {
+  height: 2px;
+  background-color: #000000;
+  border: none;
 }
 
-/* Footer styles */
-/*footer {
-  background-color: 
-  #D3D3D3;
+/* Footer */
+footer {
+  margin: 10px;
+  padding: 14px 20px;
+  background-color: #D3D3D3;
   color: #000000;
   text-align: center;
-  padding: 10px 0;
 }
-
-/* Media queries for responsive design */
-/*@media (max-width: 768px) {
-  header {
-    font-size: 1.5rem;
-  }
-
-  .shop-container {
-    padding: 10px;
-  }
-} 
