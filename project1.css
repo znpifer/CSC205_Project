@@ -5,13 +5,12 @@ header {
   font-size: x-large;
   color: #000000;
   text-align: center;
-  padding: 15px 0;
+  padding: 8px 0;
    
 }
 .logo{
-  max-width: 100px;
-  display: block;
-  float: left;
+  max-width: 150px;
+  display: inline-block;
 }
 /* General styles */
 body {
@@ -27,6 +26,7 @@ h1 {
   font-weight: 300;
   text-align: center;
   color: #000000;
+  display: block;
 }
 
 h2 {
@@ -105,8 +105,6 @@ nav li {
   width: 40%;
 }
 
-
-/* Container for reviews */
 .shop-container {
   max-width: 800px;
   margin: 20px auto;
@@ -116,7 +114,6 @@ nav li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Review card styles */
 .shop-card {
   border: 1px solid #D3D3D3;
   padding: 10px;
@@ -133,7 +130,12 @@ nav li {
   color: #666;
 }
 
-/* images */
+/* round image corners */
+img{
+  border-radius: 25px;
+}
+
+/* keep elements in box */
  *{
   box-sizing: border-box;
 }
@@ -167,12 +169,14 @@ th {
   font-family: Arial, sans-serif; 
   font-size: 16px; 
   padding: 10px; 
+  text-align: center;
 }
  /* Specify cell styles */
  td {
   font-family: Arial, sans-serif; 
   font-size: 14px; 
   padding: 10px; 
+  text-align: center;
 }
 /* Specify background color for even rows */
 tr:nth-child(even) {
